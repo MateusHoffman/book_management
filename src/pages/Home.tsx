@@ -32,7 +32,7 @@ const Home = () => {
 
       <div className="max-w-7xl mx-auto py-8 px-6 sm:px-8 lg:px-10">
         {/* Título da Página */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 tracking-tight text-center mb-8 hover:scale-105 transition-all duration-300 ease-in-out">
+        <h1 className="mt-20 text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500 tracking-tight text-center mb-8 hover:scale-105 transition-all duration-300 ease-in-out">
           Lista de Livros
         </h1>
 
@@ -41,7 +41,7 @@ const Home = () => {
         {isError && <div className="text-center text-red-500">Erro ao carregar livros: {error instanceof Error ? error.message : 'Erro desconhecido'}</div>}
 
         {/* Cards de Livros */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 z-10">
           {/* Verifica se os livros estão disponíveis */}
           {books && books.length > 0 ? (
             books.map((book: Book) => (

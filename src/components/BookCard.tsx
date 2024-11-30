@@ -10,7 +10,7 @@ interface BookCardProps {
 const BookCard: React.FC<BookCardProps> = ({ book, isLoggedIn, onClick }) => {
   return (
     <div
-      className="bg-gradient-to-r from-white via-gray-100 to-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl space-y-4 cursor-pointer"
+      className="bg-gradient-to-r from-white via-gray-100 to-white p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl space-y-4 cursor-pointer z-10"
       onClick={onClick} // Ao clicar no card, chama a função onClick da Home
     >
       {/* Título do livro com truncamento de 2 linhas */}
