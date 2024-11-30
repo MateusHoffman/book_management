@@ -1,10 +1,6 @@
-Aqui está uma versão mais detalhada e completa do seu *README.md*, incluindo instruções para rodar o backend, o frontend, e como rodar os testes unitários do projeto:
+# **Book Management**
 
----
-
-# **Nome do Projeto**
-
-Descrição breve do projeto.
+Este projeto tem como objetivo gerenciar um sistema de usuários e livros. Ele possui funcionalidades de autenticação, onde usuários podem se cadastrar e logar, e um painel administrativo onde administradores podem gerenciar os usuários e livros. O sistema é desenvolvido utilizando React para o frontend e uma API fictícia para realizar as operações CRUD (Criar, Ler, Atualizar, Deletar) para livros e usuários.
 
 ## **Índice**
 
@@ -254,7 +250,3 @@ Aqui está a estrutura básica do projeto:
 ## **Licença**
 
 Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
----
-
-Com essas instruções, o README está agora detalhado e completo, cobrindo desde a instalação até os testes unitários.
