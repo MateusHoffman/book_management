@@ -250,7 +250,3 @@ Aqui está a estrutura básica do projeto:
 ## **Licença**
 
 Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais informações.
-
----
-
-Com essas instruções, o README está agora detalhado e completo, cobrindo desde a instalação até os testes unitários.
