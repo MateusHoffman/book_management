@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/**/*", // Inclui todos os arquivos TypeScript da sua aplicação
+    "src/test/**/*" // Inclui os arquivos de teste
   ]
 }
