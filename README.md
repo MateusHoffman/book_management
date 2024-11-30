@@ -1,6 +1,6 @@
-# **Nome do Projeto**
+# **Book Management**
 
-Descrição breve do projeto.
+Este projeto tem como objetivo gerenciar um sistema de usuários e livros. Ele possui funcionalidades de autenticação, onde usuários podem se cadastrar e logar, e um painel administrativo onde administradores podem gerenciar os usuários e livros. O sistema é desenvolvido utilizando React para o frontend e uma API fictícia para realizar as operações CRUD (Criar, Ler, Atualizar, Deletar) para livros e usuários.
 
 ## **Índice**
 
