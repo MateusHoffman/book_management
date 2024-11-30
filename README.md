@@ -1,7 +1,3 @@
-Aqui está uma versão mais detalhada e completa do seu *README.md*, incluindo instruções para rodar o backend, o frontend, e como rodar os testes unitários do projeto:
-
----
-
 # **Nome do Projeto**
 
 Descrição breve do projeto.
