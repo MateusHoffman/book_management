@@ -1,47 +1,260 @@
-# Getting Started with Create React App
+Aqui está uma versão mais detalhada e completa do seu *README.md*, incluindo instruções para rodar o backend, o frontend, e como rodar os testes unitários do projeto:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# **Nome do Projeto**
 
-In the project directory, you can run:
+Descrição breve do projeto.
 
-### `yarn start`
+## **Índice**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Sobre o Projeto](#sobre-o-projeto)
+2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+3. [Pré-requisitos](#pré-requisitos)
+4. [Instalação e Execução](#instalação-e-execução)
+   - [Rodando o Backend (API)](#rodando-o-backend-api)
+   - [Rodando o Frontend (React)](#rodando-o-frontend-react)
+5. [Testes Unitários](#testes-unitários)
+6. [Estrutura de Diretórios](#estrutura-de-diretórios)
+7. [Contribuindo](#contribuindo)
+8. [Licença](#licença)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## **Sobre o Projeto**
 
-### `yarn test`
+Este é um projeto desenvolvido com **React** no frontend e um backend simulado usando **json-server**. O sistema possui funcionalidades para cadastro, login e gerenciamento de livros e usuários. O backend simula uma API RESTful para manipulação de dados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Tecnologias Utilizadas**
 
-### `yarn build`
+- **Frontend:**
+  - React (com hooks)
+  - React Router
+  - Tailwind CSS
+  - Fetch API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Backend:**
+  - json-server (para simulação de API RESTful)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Testes:**
+  - Jest
+  - React Testing Library
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Pré-requisitos**
 
-### `yarn eject`
+Antes de rodar o projeto, é necessário ter as seguintes ferramentas instaladas em sua máquina:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Node.js](https://nodejs.org/) (versão 14 ou superior)
+- [Yarn](https://yarnpkg.com/) ou [npm](https://www.npmjs.com/) (gerenciadores de pacotes)
+- [json-server](https://github.com/typicode/json-server) para rodar o backend simulado
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Instalação do Node.js**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Caso você ainda não tenha o Node.js instalado, faça o download [aqui](https://nodejs.org/).
+  
+### **Instalação do Yarn (caso necessário)**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Se você optar por usar o Yarn, pode instalar com o seguinte comando:
 
-## Learn More
+  ```bash
+  npm install --global yarn
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Instalação e Execução**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-# book_management
+### **Passos para rodar o projeto:**
+
+1. **Clone o repositório:**
+
+   Primeiramente, clone o repositório em sua máquina local:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+
+2. **Acesse a pasta do projeto:**
+
+   Navegue até a pasta do projeto clonada:
+
+   ```bash
+   cd seu-repositorio
+   ```
+
+3. **Instale as dependências:**
+
+   Instale as dependências do projeto utilizando o gerenciador de pacotes:
+
+   Se você estiver utilizando o **Yarn**:
+
+   ```bash
+   yarn install
+   ```
+
+   Ou, se estiver usando **npm**:
+
+   ```bash
+   npm install
+   ```
+
+### **Rodando o Backend (API):**
+
+O projeto utiliza **json-server** para simular uma API RESTful com dados persistidos em um arquivo JSON.
+
+1. **Configuração do arquivo de dados:**
+
+   Certifique-se de que o arquivo `db.json` esteja presente na raiz do projeto. Este arquivo contém os dados simulados.
+
+2. **Rodando o json-server:**
+
+   Para iniciar o servidor backend, execute o comando abaixo. Ele irá rodar a API no endereço `http://localhost:5000`.
+
+   Se você estiver usando **Yarn**:
+
+   ```bash
+   yarn json-server --watch db.json --port 5000
+   ```
+
+   Ou, se estiver usando **npm**:
+
+   ```bash
+   npx json-server --watch db.json --port 5000
+   ```
+
+### **Rodando o Frontend (React):**
+
+1. Inicie o servidor de desenvolvimento do React:
+
+   Se você estiver usando **Yarn**:
+
+   ```bash
+   yarn start
+   ```
+
+   Ou, se estiver usando **npm**:
+
+   ```bash
+   npm start
+   ```
+
+2. Acesse o aplicativo em seu navegador através do endereço [http://localhost:3000](http://localhost:3000).
+
+### **Rodando os Testes Unitários:**
+
+Este projeto inclui testes unitários para garantir a funcionalidade do código.
+
+1. **Testes com Jest e React Testing Library:**
+
+   Para rodar os testes, use o seguinte comando:
+
+   Se estiver utilizando **Yarn**:
+
+   ```bash
+   yarn test
+   ```
+
+   Ou, se estiver utilizando **npm**:
+
+   ```bash
+   npm test
+   ```
+
+   O comando irá executar todos os testes definidos e, se houver mudanças no código, os testes serão automaticamente reexecutados. Para uma execução única dos testes, você pode usar a opção `--coverage`:
+
+   Se estiver usando **Yarn**:
+
+   ```bash
+   yarn test --coverage
+   ```
+
+   Ou, com **npm**:
+
+   ```bash
+   npm test --coverage
+   ```
+
+   Isso gerará um relatório de cobertura de testes, mostrando quais partes do código foram testadas.
+
+2. **Verificando Testes Específicos:**
+
+   Caso você queira rodar apenas testes específicos, você pode passar o nome do teste. Por exemplo:
+
+   Se estiver usando **Yarn**:
+
+   ```bash
+   yarn test NomeDoTeste
+   ```
+
+   Ou com **npm**:
+
+   ```bash
+   npm test NomeDoTeste
+   ```
+
+### **Rodando o Backend e Frontend Juntos (Opcional):**
+
+Para rodar o backend e o frontend simultaneamente, você pode configurar um ambiente de desenvolvimento com `concurrently`.
+
+1. Instale a dependência `concurrently`:
+
+   ```bash
+   yarn add concurrently --dev
+   ```
+
+   Ou, com **npm**:
+
+   ```bash
+   npm install concurrently --save-dev
+   ```
+
+2. Configure um script no `package.json` para rodar os dois servidores juntos:
+
+   ```json
+   "scripts": {
+     "dev": "concurrently \"yarn json-server --watch db.json --port 5000\" \"yarn start\""
+   }
+   ```
+
+3. Para rodar os dois servidores, basta executar o comando:
+
+   ```bash
+   yarn dev
+   ```
+
+   Ou com **npm**:
+
+   ```bash
+   npm run dev
+   ```
+
+### **Estrutura de Diretórios**
+
+Aqui está a estrutura básica do projeto:
+
+```
+/seu-repositorio
+│
+├── /public                 # Arquivos públicos (index.html, etc.)
+├── /src                    # Código fonte
+│   ├── /components         # Componentes React
+│   ├── /api                # Funções para interação com a API
+│   ├── /tests              # Arquivos de teste
+│   ├── /types              # Tipos TypeScript
+│   └── App.tsx             # Componente principal
+├── /db.json                # Arquivo de dados do json-server
+├── package.json             # Dependências e scripts do projeto
+└── README.md               # Este arquivo
+```
+
+## **Contribuindo**
+
+1. Faça um **fork** do repositório.
+2. Crie uma branch para a sua feature (`git checkout -b feature/MinhaNovaFeature`).
+3. Faça as alterações desejadas e **commit** as alterações (`git commit -m 'Adiciona nova feature'`).
+4. **Push** para a sua branch (`git push origin feature/MinhaNovaFeature`).
+5. Abra um **pull request**.
+
+## **Licença**
+
+Este projeto é licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
+---
+
+Com essas instruções, o README está agora detalhado e completo, cobrindo desde a instalação até os testes unitários.
